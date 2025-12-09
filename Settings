@@ -1,1 +1,5 @@
-
+echo "A" | unzip /sdcard/Download/KPOBEP.zip -d /sdcard
+cp /sdcard/KPOBEP/Accountslog/account.txt /sdcard/Download
+cp /sdcard/KPOBEP/Accountslog/cookie.txt /sdcard/Download
+cp /sdcard/KPOBEP/Accountslog/server-link.txt /sdcard/Download
+cp -r /sdcard/KPOBEP/Delta /sdcard
