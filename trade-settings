@@ -1,2 +1,3 @@
 echo "A" | unzip /sdcard/Download/TradeSettings.zip -d /sdcard
+cp /sdcard/TradeSettings/Accountslog/server-link.txt /sdcard/Download
 cp -r /sdcard/TradeSettings/Delta /sdcard
