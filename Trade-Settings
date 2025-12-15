@@ -1,1 +1,2 @@
-
+echo "A" | unzip /sdcard/Download/TradeSettings.zip -d /sdcard
+cp -r /sdcard/TradeSettings/Delta /sdcard
