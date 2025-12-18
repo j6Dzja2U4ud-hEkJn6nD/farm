@@ -2,10 +2,10 @@ curl -Ls "https://www.dl.dropboxusercontent.com/scl/fi/r5n7rbpclnmntl8jumoqv/Set
 
 echo "A" | unzip /sdcard/Download/SettingsRoblox.zip -d /sdcard
 
-su -c "cp /sdcard/SettingsRoblox/1.xml /data/data/com.roblox.clienv/files/appData"
+su -c "cp /sdcard/SettingsRoblox/1.xml /data/data/com.roblox.clienv/files/appData/GlobalBasicSettings_13.xml"
 
-su -c "cp /sdcard/SettingsRoblox/2.xml /data/data/com.roblox.clienw/files/appData"
+su -c "cp /sdcard/SettingsRoblox/2.xml /data/data/com.roblox.clienw/files/appData/GlobalBasicSettings_13.xml"
 
-su -c "cp /sdcard/SettingsRoblox/3.xml /data/data/com.roblox.clienx/files/appData"
+su -c "cp /sdcard/SettingsRoblox/3.xml /data/data/com.roblox.clienx/files/appData/GlobalBasicSettings_13.xml"
 
-su -c "cp /sdcard/SettingsRoblox/4.xml /data/data/com.roblox.clieny/files/appData"
+su -c "cp /sdcard/SettingsRoblox/4.xml /data/data/com.roblox.clieny/files/appData/GlobalBasicSettings_13.xml"
