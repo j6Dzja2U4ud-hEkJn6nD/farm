@@ -1,9 +1,5 @@
 curl -Ls "https://www.dl.dropboxusercontent.com/scl/fi/pcski0d8mfvxkk18ec4sz/GlobalBasicSettings_13.xml?rlkey=lmxmn2txy2lw075w60lrns9md&st=6z4yxe2o&dl=0" -o /sdcard/Download/GlobalBasicSettings_13.xml
-
 su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/com.roblox.clienv/files/appData"
-
 su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/com.roblox.clienw/files/appData"
-
 su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/com.roblox.clienx/files/appData"
-
 su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/com.roblox.clieny/files/appData"
