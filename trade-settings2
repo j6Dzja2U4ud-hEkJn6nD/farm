@@ -1,0 +1,3 @@
+cp /sdcard/TradeSettings/Accountslog/account2.txt /sdcard/Download/account.txt
+cp /sdcard/TradeSettings/Accountslog/cookie2.txt /sdcard/Download/cookie.txt
+cp -r /sdcard/TradeSettings/Delta /sdcard
