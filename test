@@ -1,4 +1,5 @@
-su -c "cp -r /data/data/com.roblox.clienv /storage/emulated/0/TradeSettings"
-su -c "cp -r /data/data/com.roblox.clienw /storage/emulated/0/TradeSettings"
-su -c "cp -r /data/data/com.roblox.clieny /storage/emulated/0/TradeSettings"
-su -c "cp -r /data/data/com.roblox.clienx /storage/emulated/0/TradeSettings"
+echo "A" | unzip /sdcard/Download/TradeSettings.zip -d /sdcard
+cp /sdcard/TradeSettings/Accountslog/server-link.txt /sdcard/Download
+cp /sdcard/TradeSettings/Accountslog/account1.txt /sdcard/Download/account.txt
+cp /sdcard/TradeSettings/Accountslog/cookie1.txt /sdcard/Download/cookie.txt
+cp -r /sdcard/TradeSettings/Delta /sdcard
