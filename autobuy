@@ -1,0 +1,46 @@
+local args = {
+	"pets",
+	"retired_egg",
+	{
+		buy_count = 99
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("OemoAQKCFzDPAnw"):InvokeServer(unpack(args))
+wait(10)
+local args = {
+	"pets",
+	"retired_egg",
+	{
+		buy_count = 99
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("OemoAQKCFzDPAnw"):InvokeServer(unpack(args))
+wait(10)
+local args = {
+	"pets",
+	"retired_egg",
+	{
+		buy_count = 99
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("OemoAQKCFzDPAnw"):InvokeServer(unpack(args))
+wait(10)
+local args = {
+	"pets",
+	"retired_egg",
+	{
+		buy_count = 99
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("OemoAQKCFzDPAnw"):InvokeServer(unpack(args))
+wait(10)
+while wait(1) do
+local args = {
+	"pets",
+	"retired_egg",
+	{
+		buy_count = 1
+	}
+}
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("OemoAQKCFzDPAnw"):InvokeServer(unpack(args))
+end
