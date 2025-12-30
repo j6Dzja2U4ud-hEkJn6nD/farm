@@ -5,7 +5,7 @@ local args = {
 		buy_count = 99
 	}
 }
-game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("PfnpBRLDG/EQBox"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("cs/BOeYQTMRdOAJ"):InvokeServer(unpack(args))
 wait(10)
 local args = {
 	"pets",
@@ -14,7 +14,7 @@ local args = {
 		buy_count = 99
 	}
 }
-game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("PfnpBRLDG/EQBox"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("cs/BOeYQTMRdOAJ"):InvokeServer(unpack(args))
 wait(10)
 local args = {
 	"pets",
@@ -23,7 +23,7 @@ local args = {
 		buy_count = 99
 	}
 }
-game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("PfnpBRLDG/EQBox"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("cs/BOeYQTMRdOAJ"):InvokeServer(unpack(args))
 wait(10)
 local args = {
 	"pets",
@@ -32,7 +32,7 @@ local args = {
 		buy_count = 99
 	}
 }
-game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("PfnpBRLDG/EQBox"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("cs/BOeYQTMRdOAJ"):InvokeServer(unpack(args))
 wait(10)
 while wait(1) do
 local args = {
@@ -42,5 +42,5 @@ local args = {
 		buy_count = 1
 	}
 }
-game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("PfnpBRLDG/EQBox"):InvokeServer(unpack(args))
+game:GetService("ReplicatedStorage"):WaitForChild("API"):WaitForChild("cs/BOeYQTMRdOAJ"):InvokeServer(unpack(args))
 end
