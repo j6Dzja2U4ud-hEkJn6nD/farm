@@ -1,0 +1,68 @@
+local FPSCounter = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local BlowTorch702 = Instance.new("TextLabel")
+ 
+--Properties:
+ 
+FPSCounter.Name = "FPS Counter"
+FPSCounter.Parent = game.CoreGui
+FPSCounter.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ 
+Frame.Parent = FPSCounter
+Frame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.0192946233, 0, 0.773753881, 0)
+Frame.Size = UDim2.new(0, 178, 0, 62)
+ 
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.268431932, 0, 0.0572184883, 0)
+TextLabel.Size = UDim2.new(0, 82, 0, 36)
+TextLabel.Font = Enum.Font.Michroma
+TextLabel.Text = "Loading..."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+ 
+BlowTorch702.Name = "BlowTorch702"
+BlowTorch702.Parent = Frame
+BlowTorch702.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BlowTorch702.BackgroundTransparency = 1.000
+BlowTorch702.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BlowTorch702.Position = UDim2.new(0.483391911, 0, 0.647027314, 0)
+BlowTorch702.Size = UDim2.new(0, 91, 0, 21)
+BlowTorch702.Font = Enum.Font.Michroma
+BlowTorch702.Text = "BlowTorch702"
+BlowTorch702.TextColor3 = Color3.fromRGB(255, 255, 255)
+BlowTorch702.TextSize = 12.000
+ 
+-- Scripts:
+ 
+local function OVGD_fake_script() -- FPSCounter.Drag Script 
+    local script = Instance.new('LocalScript', FPSCounter)
+ 
+    Frame = script.Parent.Frame
+    Frame.Draggable = true
+    Frame.Active = true
+    Frame.Selectable = true
+end
+coroutine.wrap(OVGD_fake_script)()
+local function ZMMI_fake_script() -- TextLabel.FPS Counter Script 
+    local script = Instance.new('LocalScript', TextLabel)
+ 
+    local RS = game:GetService("RunService")
+    local FPS = 0
+    
+    function UpdateFPS()
+        FPS = FPS + 1
+    end
+    
+    RS.RenderStepped:Connect(UpdateFPS)
+    while wait(1) do
+        script.Parent.Text = FPS.." FPS"
+        FPS = 0
+    end
+end
+coroutine.wrap(ZMMI_fake_script)()
