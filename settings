@@ -1,0 +1,5 @@
+echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard
+cp /sdcard/Settings/Accountslog/cookie.txt /sdcard/Download
+cp /sdcard/Settings/Accountslog/config.json /sdcard/Download/Shouko
+cp /sdcard/Settings/Accountslog/server_links.txt /sdcard/Download/Shouko
+cp -r /sdcard/Settings/Delta /sdcard
