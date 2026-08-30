@@ -4,4 +4,4 @@ echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard && rm /sdcard/Download
 mv /sdcard/Settings/config.json /sdcard/Download/Shouko
 mv /sdcard/Settings/server_links.txt /sdcard/Download/Shouko
 mv /sdcard/Settings/Delta /sdcard
-python /sdcard/Settings/send-key.py
+python /sdcard/Settings/sender.py
