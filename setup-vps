@@ -1,1 +1,12 @@
-
+apt update && apt upgrade -y
+echo "GatewayPorts yes" >> /etc/ssh/sshd_config
+echo "AllowTcpForwarding yes" >> /etc/ssh/sshd_config
+echo "Port 8080" >> /etc/ssh/sshd_config
+systemctl daemon-reload
+systemctl restart ssh.socket
+useradd -m -s /bin/bash phone
+mkdir -p /home/phone/.ssh
+touch /home/phone/.ssh/authorized_keys
+chmod 700 /home/phone/.ssh
+chmod 600 /home/phone/.ssh/authorized_keys
+chown -R phone:phone /home/phone/.ssh
