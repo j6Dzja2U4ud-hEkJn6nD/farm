@@ -10,4 +10,3 @@ touch /home/phone/.ssh/authorized_keys
 chmod 700 /home/phone/.ssh
 chmod 600 /home/phone/.ssh/authorized_keys
 chown -R phone:phone /home/phone/.ssh
-info "Завершено"
