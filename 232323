@@ -1,0 +1,5 @@
+PKG="com.termux"
+su -c "dumpsys deviceidle whitelist +$PKG"
+su -c "appops set $PKG RUN_IN_BACKGROUND allow"
+su -c "appops set $PKG RUN_ANY_IN_BACKGROUND allow"
+su -c "am set-standby-bucket $PKG active"
