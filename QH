@@ -1,0 +1,7 @@
+mkdir -p ~/.termux/boot
+echo '#!/bin/bash
+su -c "export PATH=\$PATH:/data/data/com.termux/files/usr/bin && export TERM=xterm-256color && export TMPDIR=/data/data/com.termux/files/usr/tmp && export LD_LIBRARY_PATH=/data/data/com.termux/files/usr/lib && cd /storage/emulated/0/Download && /data/data/com.termux/files/home/caylapbu/main" <<EOF
+2
+99999
+2
+EOF' > ~/.termux/boot/abcd.sh
