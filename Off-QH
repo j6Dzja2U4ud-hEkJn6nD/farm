@@ -1,0 +1,2 @@
+kill -9 $(pgrep -f abcd.sh)
+rm ~/.termux/boot/abcd.sh
