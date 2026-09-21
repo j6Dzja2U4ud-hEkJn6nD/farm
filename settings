@@ -1,10 +1,5 @@
 pkg install python -y
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMWZ71KZdPmDOceNyyEg+V5J3hyurXkRLJ3iA1/rxlqD" >> ~/.ssh/authorized_keys
-PKG="com.termux"
-su -c "dumpsys deviceidle whitelist +$PKG"
-su -c "appops set $PKG RUN_IN_BACKGROUND allow"
-su -c "appops set $PKG RUN_ANY_IN_BACKGROUND allow"
-su -c "am set-standby-bucket $PKG active"
 echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard && rm /sdcard/Download/Settings.zip
 mv /sdcard/Settings/config.json /sdcard/Download/Shouko
 cp /sdcard/Settings/server_links.txt /sdcard/Download/Shouko
