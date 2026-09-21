@@ -1,0 +1,11 @@
+curl -Ls "https://www.dl.dropboxusercontent.com/scl/fi/y11jnqb6nlbkdpzdeleiv/GlobalBasicSettings_13.xml?rlkey=ieqvy3f1lp9845rgkpoipydfn&st=6eahadra&dl=0" -o /sdcard/Download/GlobalBasicSettings_13.xml
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltq/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltr/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.delts/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltt/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltu/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltv/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltw/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltx/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.delty/files/appData"
+su -c "cp /sdcard/Download/GlobalBasicSettings_13.xml /data/data/jmx.deltz/files/appData"
