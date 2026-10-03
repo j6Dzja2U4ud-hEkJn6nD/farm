@@ -1,0 +1,7 @@
+mkdir -p ~/.termux/boot
+cat > ~/.termux/boot/start-sshd.sh << 'EOF'
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+sshd
+EOF
+chmod +x ~/.termux/boot/start-sshd.sh
