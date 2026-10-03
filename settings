@@ -1,5 +1,12 @@
 pkg install python -y
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMWZ71KZdPmDOceNyyEg+V5J3hyurXkRLJ3iA1/rxlqD" >> ~/.ssh/authorized_keys
+mkdir -p ~/.termux/boot
+cat > ~/.termux/boot/start-sshd.sh << 'EOF'
+#!/data/data/com.termux/files/usr/bin/sh
+termux-wake-lock
+sshd
+EOF
+chmod +x ~/.termux/boot/start-sshd.sh
 echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard && rm /sdcard/Download/Settings.zip
 mv /sdcard/Settings/config.json /sdcard/Download/Shouko
 cp /sdcard/Settings/server_links.txt /sdcard/Download/Shouko
