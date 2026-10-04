@@ -7,6 +7,7 @@ termux-wake-lock
 sshd
 EOF
 chmod +x ~/.termux/boot/start-sshd.sh
+su -c "appops set com.termux RUN_IN_BACKGROUND allow"
 echo "A" | unzip /sdcard/Download/Settings.zip -d /sdcard && rm /sdcard/Download/Settings.zip
 mv /sdcard/Settings/config.json /sdcard/Download/Shouko
 cp /sdcard/Settings/server_links.txt /sdcard/Download/Shouko
