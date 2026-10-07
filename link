@@ -1,0 +1,43 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Сохраняет содержимое буфера обмена в файл.
+# Использование: clip2file.sh [директория] [имя_файла]
+# По умолчанию:  /storage/emulated/0/Settings/link.txt
+# Пример:        clip2file.sh /sdcard/Download note.txt
+# Требуется:     pkg install termux-api  +  приложение Termux:API
+
+set -u
+
+DIR="${1:-/storage/emulated/0/Settings}"
+NAME="${2:-link.txt}"
+
+if ! command -v termux-clipboard-get >/dev/null 2>&1; then
+  echo "Не найден termux-clipboard-get. Установите: pkg install termux-api (и приложение Termux:API)" >&2
+  exit 1
+fi
+
+# Читаем буфер во временный файл, чтобы сохранить содержимое байт в байт
+TMP="$(mktemp)"
+trap 'rm -f "$TMP"' EXIT
+
+termux-clipboard-get > "$TMP"
+if [ ! -s "$TMP" ]; then
+  echo "Буфер обмена пуст (или нет доступа к нему)" >&2
+  exit 1
+fi
+
+DIR="${DIR%/}"
+[ -z "$DIR" ] && DIR="/"
+FILE="$DIR/$NAME"
+
+# Экранирование строки для передачи в su -c
+q() { local s=${1//\'/\'\\\'\'}; printf "'%s'" "$s"; }
+
+# Сначала пробуем без root, если не вышло — через su
+if mkdir -p "$DIR" 2>/dev/null && cp "$TMP" "$FILE" 2>/dev/null; then
+  :
+else
+  su -c "unset LD_LIBRARY_PATH LD_PRELOAD; mkdir -p $(q "$DIR") && cp $(q "$TMP") $(q "$FILE") && chmod 644 $(q "$FILE")" \
+    || { echo "Не удалось создать файл: $FILE" >&2; exit 1; }
+fi
+
+echo "Готово: $FILE ($(wc -c < "$TMP") байт)"
