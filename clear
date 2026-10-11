@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "🧹 Очистка кэша Delta-bypass..."
+
+# 1. Удаление Python-кэша (__pycache__ и .pyc)
+if [ -d "__pycache__" ]; then
+    rm -rf __pycache__
+    echo "[+] Папка __pycache__ очищена."
+fi
+find . -maxdepth 1 -name "*.pyc" -delete
+echo "[+] Файлы .pyc удалены."
+
+# 2. Удаление JSON-кэша скрипта (только известные имена)
+for f in .key_cache.json cache.json; do
+    if [ -f "$f" ]; then
+        rm -f "$f"
+        echo "[+] Удалён кэш: $f"
+    fi
+done
+
+echo "✅ Готово! Файлы license и link.txt не тронуты."
