@@ -1,2 +1,2 @@
-ps -eo pid,ppid,etime,args | grep '[a]bcd.sh'
+kill $(pgrep -f '[a]bcd.sh')
 rm ~/.termux/boot/abcd.sh
