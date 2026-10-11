@@ -1,2 +1,2 @@
 su -c "pkill -f '[a]bcd.sh'; pkill -f '[c]aylapbu/main'"
-rm ~/.termux/boot/abcd.sh
+rm -f ~/.termux/boot/abcd.sh
