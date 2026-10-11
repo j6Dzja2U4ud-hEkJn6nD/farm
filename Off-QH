@@ -1,2 +1,3 @@
-kill $(pgrep -f '[a]bcd.sh')
+pkill -f '[a]bcd.sh'
+su -c "pkill -f '[c]aylapbu/main'"
 rm ~/.termux/boot/abcd.sh
