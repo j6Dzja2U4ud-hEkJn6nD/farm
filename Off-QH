@@ -1,2 +1,5 @@
 su -c "pkill -f '[a]bcd.sh'; pkill -f '[c]aylapbu/main'"
 rm -f ~/.termux/boot/abcd.sh
+
+APPS="jmx.delts jmx.deltt jmx.deltu jmx.deltv jmx.deltw jmx.deltx jmx.delty jmx.deltz"
+su -c "for p in $APPS; do am force-stop \$p; done"
