@@ -3,3 +3,6 @@ rm -f ~/.termux/boot/abcd.sh
 
 APPS="jmx.delts jmx.deltt jmx.deltu jmx.deltv jmx.deltw jmx.deltx jmx.delty jmx.deltz"
 su -c "for p in $APPS; do am force-stop \$p; done"
+
+sleep 1
+su -c "settings put system accelerometer_rotation 0; settings put system user_rotation 0; input keyevent KEYCODE_HOME"
